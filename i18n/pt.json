@@ -230,10 +230,6 @@
       "previousError": "Erro Anterior",
       "revealError": "Mostrar Erro"
     },
-    "electron": {
-      "couldNotSave": "Não foi possível salvar o sketch. Por favor, copie seu trabalho não salvo para o seu editor de texto favorito e reinicie a IDE.",
-      "unsavedChanges": "Quaisquer alterações não salvas não serão salvas."
-    },
     "examples": {
       "builtInExamples": "Exemplos Integrados",
       "couldNotInitializeExamples": "Não foi possível inicializar os exemplos integrados.",
@@ -282,6 +278,10 @@
       "updateAvailable": "Atualização Disponível",
       "versionDownloaded": "O Arduino IDE {0} foi baixado. "
     },
+    "installable": {
+      "libraryInstallFailed": "A instalação da biblioteca '{0}{1}' falhou. ",
+      "platformInstallFailed": "A instalação da plataforma '{0}{1}' falhou."
+    },
     "library": {
       "addZip": "Adicionar biblioteca .ZIP...",
       "arduinoLibraries": "Bibliotecas Arduino",
@@ -328,13 +328,13 @@
       "tools": "Ferramentas"
     },
     "monitor": {
-      "alreadyConnectedError": "Could not connect to {0} {1} port. Already connected.",
+      "alreadyConnectedError": "Não foi possível se conectar à porta {0} {1}. Já conectado.",
       "baudRate": "{0} baud",
-      "connectionFailedError": "Could not connect to {0} {1} port.",
-      "connectionFailedErrorWithDetails": "{0} Could not connect to {1} {2} port.",
-      "connectionTimeout": "Timeout. The IDE has not received the 'success' message from the monitor after successfully connecting to it",
-      "missingConfigurationError": "Could not connect to {0} {1} port. The monitor configuration is missing.",
-      "notConnectedError": "Not connected to {0} {1} port.",
+      "connectionFailedError": "Não foi possível se conectar à porta {0} {1}.",
+      "connectionFailedErrorWithDetails": "{0} Não foi possível se conectar à porta {1} {2}.",
+      "connectionTimeout": "Tempo esgotado. A IDE não recebeu a mensagem de 'sucesso' do monitor após estabelecer uma conexão com sucesso",
+      "missingConfigurationError": "Não foi possível se conectar à porta {0} {1}. As configurações do monitor estão faltando. ",
+      "notConnectedError": "Não conectado à porta {0} {1}.",
       "unableToCloseWebSocket": "Impossível fechar websocket",
       "unableToConnectToWebSocket": "Impossível conectar ao websocket"
     },
@@ -415,7 +415,7 @@
     "serial": {
       "autoscroll": "Avanço automático de linha",
       "carriageReturn": "Retorno de linha",
-      "connecting": "Connecting to '{0}' on '{1}'...",
+      "connecting": "Conectando a '{0}' em '{1}'...",
       "message": "Mensagem ({0} + Enter para enviar mensagem para '{1}' em '{2}'",
       "newLine": "Nova linha",
       "newLineCarriageReturn": "Nova linha e retorno de linha",
@@ -428,7 +428,6 @@
     "sketch": {
       "archiveSketch": "Arquivar Esboço",
       "cantOpen": "Um diretório chamado de \"{0}\" já existe. Não é possível abrir o esboço.",
-      "close": "Você tem certeza de que você quer fechar esse esboço?",
       "compile": "Compilando esboço...",
       "configureAndUpload": "Configurar e fazer Envio",
       "createdArchive": "Arquivo criado '{0}'.",
@@ -475,12 +474,13 @@
       "surveyMessage": "Por favor, ajude-nos a melhorar respondendo essa pequena pesquisa. Nós valorizamos nossa comunidade  e gostaríamos de conhecer nossos colaboradores um pouco melhor."
     },
     "theme": {
-      "currentThemeNotFound": "Could not find the currently selected theme: {0}. Arduino IDE has picked a built-in theme compatible with the missing one.",
-      "dark": "Dark",
-      "deprecated": "{0} (deprecated)",
-      "hc": "High Contrast",
-      "light": "Light",
-      "user": "{0} (user)"
+      "currentThemeNotFound": "Não foi possível encontrar o tema selecionado atualmente: {0}. A IDE Arduino escolheu um tema embutido compatível com o que está faltando. ",
+      "dark": "Escuro",
+      "deprecated": "{0} (descontinuado)",
+      "hc": "Escuro Alto Contraste",
+      "hcLight": "Claro Alto Contraste",
+      "light": "Claro",
+      "user": "{0} (usuário)"
     },
     "title": {
       "cloud": "Nuvem"
